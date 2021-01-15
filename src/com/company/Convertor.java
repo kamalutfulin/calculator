@@ -197,20 +197,18 @@ public class Convertor {
 
         try {
             arabANumber = Integer.parseInt(a);
-            if (arabANumber>= 0 && arabANumber<=10){
+            if (arabANumber >= 0 && arabANumber <= 10) {
                 try {
                     arabBNumber = Integer.parseInt(b);
-                    if (arabBNumber>= 0 && arabBNumber<=10) {
+                    if (arabBNumber >= 0 && arabBNumber <= 10) {
                         System.out.println(Calculator.calculationOfNumerals(arabANumber, arabBNumber, operator));
-                    }
-                    else {
+                    } else {
                         System.out.println("Вы ввели некорректное число");
                     }
                 } catch (Exception e) {
                     System.out.println("Вы ввели некорректное число");
                 }
-            }
-            else {
+            } else {
                 System.out.println("Вы ввели некорректное число");
             }
 
