@@ -11,6 +11,5 @@ public class Main {
         String input = scanner.nextLine();
         Convertor convertor = new Convertor();
         convertor.breakIntoElements(input);
-
     }
 }
