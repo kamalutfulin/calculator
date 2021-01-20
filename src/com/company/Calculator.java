@@ -4,17 +4,20 @@ public class Calculator {
     public static int calculationOfNumerals(int a, int b, String arithmeticOperation) {
         int result = 0;
 
-        if (arithmeticOperation.charAt(0) == ('+')) {
-            result = a + b;
-        }
-        if (arithmeticOperation.charAt(0) == ('-')) {
-            result = a - b;
-        }
-        if (arithmeticOperation.charAt(0) == ('*')) {
-            result = a * b;
-        }
-        if (arithmeticOperation.charAt(0) == ('/')) {
-            result = a / b;
+        switch (arithmeticOperation.charAt(0)) {
+            case '+':
+                result = a + b;
+                break;
+            case '-':
+                result = a - b;
+                break;
+            case '*':
+                result = a * b;
+                break;
+
+            case '/':
+                result = a / b;
+                break;
         }
         return result;
     }
